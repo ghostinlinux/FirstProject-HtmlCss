@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <!-- para  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            height: 100%;
+        }
+        
+        body {
+            background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .fheader {
+            background-color: #270447;
+            padding: 7px;
+        }
+        
+        .container {
+            margin: auto;
+            width: 100%;
+        }
+        
+        .container li {
+            margin-left: 20px;
+        }
+        
+        .list li {
+            list-style: none;
+            display: inline-block;
+        }
+        
+        .list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .list li a:hover {
+            color: red;
+        }
+        
+        .homehead {
+            background-color: #1a0231;
+            border-radius: 15px;
+            border: 1px solid cornflowerblue;
+            opacity: 0.8;
+            height: 87%;
+            width: 80%;
+            margin: 10px auto;
+            overflow: hidden;
+        }
+        
+        .content {
+            padding: 30px;
+            line-height: 2;
+        }
+        
+        .terminalhead {
+            color: yellow;
+            font-family: 'Inconsolata', monospace;
+        }
+        
+        .command {
+            background: linear-gradient(to right, #858aca 49%, #CF1512 56%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .para {
+            background: #CF1D47;
+            background: -webkit-linear-gradient(to right, #CF1D47 20%, #3B3BFF 31%, #CFA415 75%);
+            background: -moz-linear-gradient(to right, #CF1D47 20%, #3B3BFF 31%, #CFA415 75%);
+            background: linear-gradient(to right, #CF1D47 20%, #3B3BFF 31%, #CFA415 75%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Inconsolata', monospace;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 16px;
+        }
+        
+        .info {
+            color: red;
+            background: #CF1D47;
+            background: -webkit-linear-gradient(to right, #CF1D47 20%, #3B3BFF 31%, #CFA415 75%);
+            background: -moz-linear-gradient(to right, #CF1D47 20%, #3B3BFF 31%, #CFA415 75%);
+            background: linear-gradient(to right, #CF1D47 20%, #3B3BFF 31%, #CFA415 75%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Inconsolata', monospace;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 16px;
+        }
+        
+        .foothead {
+            background-color: #15021e;
+            border-radius: 4px;
+        }
+        
+        .foot {
+            color: wheat;
+            margin: 9px;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        .foot:hover {
+            color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="fheader">
+        <div class="container">
+            <ul class="list">
+                <li id="flist1"> <a href="index.html"> Home </a></li>
+                <li id="flist2"> <a href="about.html"> About </a> </li>
+                <li id="flist3"> <a href="contact.html"> Contact us </a> </li>
+            </ul>
+        </div>
+    </header>
+    <section class="homehead">
+        <div class="content">
+            <span class="terminalhead">ghostinlinux&#64;root&#58;&#126;&#35; </span>
+            <span class="command">ls</span>
+            <p class="para" style="color: red;">About &nbsp;&nbsp;&nbsp;Contact &nbsp;&nbsp;&nbsp; info.txt</p>
+
+            <span class="terminalhead">ghostinlinux&#64;root&#58;&#126;&#35; </span>
+            <span class="command">cd About</span>
+
+            <span class="terminalhead">ghostinlinux&#64;root&#58;&#126;&#35; </span>
+            <span class="command">ls -la</span>
+            <p class="para">-rw-r--r-- 1 ghostinlinux 197611 798 May 29 17:47 about.txt</p>
+
+            <span class="terminalhead">ghostinlinux&#64;root&#58;&#126;&#35; </span>
+            <span class="command">cat about.txt</span>
+            <p class="para">NAME
+                <ul>
+                    <li class="info">
+                        Pratik Singh
+                    </li>
+                </ul>
+            </p>
+            <p class="para">STUDYING :
+                <ul>
+                    <li class="info">
+                        CSE (1st Year)
+                    </li>
+                </ul>
+            </p>
+            <p class="para">Learning :
+                <ul>
+                    <li class="info">Full stack web Development</li>
+                    <li class="info">Python</li>
+                    <li class="info">Java</li>
+                    <li class="info">Bash</li>
+                </ul>
+            </p>
+            <span class="terminalhead">ghostinlinux&#64;root&#58;&#126;&#35; </span>
+            <span class="command">exit</span>
+
+
+        </div>
+    </section>
+
+    <footer class="foothead">
+        <div class="foot">
+            Made with &#9829; ghostinlinux
+        </div>
+    </footer>
+</body>
+
+</html>
